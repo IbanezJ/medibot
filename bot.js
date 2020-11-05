@@ -1,4 +1,3 @@
-const token = require('./credentials');
 const Discord = require('discord.js');
 const axios = require("axios");
 const client = new Discord.Client();
@@ -29,4 +28,4 @@ client.on('message', msg => {
     }
 });
 
-client.login(token);
+client.login(process.env.MEDIBOT_TOKEN);
