@@ -9,7 +9,7 @@ client.on('ready', () => {
 client.on('message', msg => {
     if (msg.channel.id === '773855406547533834') {
         if (msg.content === 'ping') {
-            msg.reply(pong);
+            msg.reply("pong");
         }
         if (msg.content === 'test post') {
             axios
