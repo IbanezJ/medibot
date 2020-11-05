@@ -1,0 +1,25 @@
+{
+
+  "name": "medibot",
+
+  "description": "Discord bot for Medivel",
+
+  "version": "0.0.0",
+
+  "main": "bot.js",
+
+  "scripts": {
+
+    "start": "node bot.js"
+
+  },
+
+  "dependencies": {
+
+    "discord.js": "12.4.1",
+
+    "axios": "0.21.0"
+
+  }
+
+}
