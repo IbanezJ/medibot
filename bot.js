@@ -20,6 +20,7 @@ client.on('message', msg => {
                 .then(res => {
                     console.log(res.status);
                     console.log(res.data);
+		    msg.channel.send(res.data);
                 })
                 .catch(error => {
                     console.error(error);
