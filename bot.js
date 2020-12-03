@@ -26,6 +26,21 @@ client.on('message', msg => {
                     console.error(error);
                 })
         }
+        if (!msg.author.bot) {
+            axios
+                .post('http://jalex-8eb0ef26.localhost.run/model/parse', {
+                    text: msg.content
+                })
+                .then(res => {
+                    console.log(res.status);
+                    console.log(res.data.intent_ranking);
+                    
+                    msg.channel.send(res.data.intent.name);
+                })
+                .catch(error => {
+                    console.error(error);
+                })
+        }
     }
 });
 
